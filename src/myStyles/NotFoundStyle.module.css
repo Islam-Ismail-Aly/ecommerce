@@ -1,0 +1,39 @@
+/* NotFoundStyle.module.css */
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: #f8f9fa;
+ }
+ 
+ .errorContainer {
+   text-align: center;
+   color: #dc3545;
+ }
+ 
+ .errorHeading {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+ }
+ 
+ .movingImage img {
+   width: 100%;
+   max-width: 600px;
+   animation: float 2s infinite ease-in-out;
+ }
+ 
+ .errorMessage {
+   font-size: 1.25rem;
+ }
+ 
+ @keyframes float {
+   0%, 100% {
+     transform: translateY(0);
+   }
+   50% {
+     transform: translateY(-10px);
+   }
+ }
+ 
